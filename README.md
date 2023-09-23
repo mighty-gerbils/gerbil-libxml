@@ -39,7 +39,6 @@ To use bindings from this package:
  invalid *source*.
 
  *options* is fixnum denoting XML parsing options. Available options are:
-::: tip Options values
 ```
 XML_PARSE_RECOVER
 XML_PARSE_NOENT
@@ -59,7 +58,6 @@ XML_PARSE_NOXINCNODE
 XML_PARSE_COMPACT
 XML_PARSE_HUGE
 ```
-:::
 
 Details of above flags can be found at [LibXML reference documentation](http://www.xmlsoft.org/html/libxml-parser.html#xmlParserOption).
 
@@ -71,14 +69,14 @@ to:
        XML_PARSE_NOBLANKS)
 ```
 
-::: tip Examples
+Examples
 ``` scheme
 > (import :std/net/request)
 > (import :std/xml)
 > (parse-xml (request-text (http-get "https://www.w3schools.com/xml/note.xml")))
 (*TOP* (note (to "Tove") (from "Jani") (heading "Reminder") (body "Don't forget me this weekend!")))
 ```
-:::
+
 
 ### parse-html
 ``` scheme
@@ -97,7 +95,6 @@ Parses HTML data from given *source* into SXML + CDATA.
 Signals an error on invalid *source*.
 
 Available *options* values are:
-::: tip Options values
 ```
 HTML_PARSE_RECOVER
 HTML_PARSE_NODEFDTD
@@ -110,7 +107,6 @@ HTML_PARSE_NOIMPLIED
 HTML_PARSE_COMPACT
 HTML_PARSE_IGNORE_ENC
 ```
-:::
 
 Details of above flags can be found at [LibXML reference documentation](http://www.xmlsoft.org/html/libxml-HTMLparser.html#htmlParserOption).
 
