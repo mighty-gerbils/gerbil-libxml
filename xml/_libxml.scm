@@ -291,6 +291,7 @@ static int ffi_libxml_iocontext_read (void *ctx, char *buf, int buflen) {
   libxml_io_context_t ioctx = (libxml_io_context_t)ctx;
   int rlen = buflen;
   int wlen = 0;
+  ___WORD ___temp;
 
 again:
   if (___PAIRP (ioctx->data)) {
