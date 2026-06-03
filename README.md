@@ -12,7 +12,7 @@ In ubuntu, it is installed by default.
 
 To install the package in your `$GERBIL_PATH` (`~/.gerbil` by default):
 ```shell
-$ gerbil pkg install github.com/mighty-gerbils/gerbil-libxml
+$ gerbil pkg install git.cons.io/mighty-gerbils/gerbil-libxml
 ```
 
 ## API
